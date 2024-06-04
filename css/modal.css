@@ -1,0 +1,75 @@
+
+/* alt er taget fra W3BSCHOOLS */
+
+
+.modal {
+padding: 1em;
+max-width: 50ch;
+border: 0;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 80%;
+max-width: 45rem;
+height: 100%;
+max-height: 37rem;
+padding: 2rem;
+border-radius: 15px;
+z-index: 10;
+overflow-y: scroll;
+  }
+
+  /* .modal::-webkit-scrollbar {
+    display: none;
+  } */
+
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+.close-button{
+  margin-top: 1.6rem;
+  padding: .5rem;
+  border: none;
+}
+
+
+#poplogo{
+float: right;
+  height: 3.2rem;
+}
+
+.pop-main{
+display: flex;
+justify-content: center;
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.pop-p{
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+#p-wheat{
+
+    margin-top: 1.6rem;
+    padding: .5rem;
+
+}
+
+#p-Ernæring{
+
+  margin-top: 1.6rem;
+  padding: .5rem;
+
+}
+

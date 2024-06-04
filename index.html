@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+    content="Discover the finest alcohol-free beers at ZeroBuzz Brew. 
+    Crafted with premium ingredients, our brews offer the full flavor of traditional beer without the alcohol. 
+    Perfect for any occasion. Shop now!">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" >
+
+
+    <title>ZeroBuzz Brew</title>
+  </head>
+<body>
+
+  <!-- Header -->
+    <header class="header nav-open">
+      <a href="index.html">
+        <img class="logo" src="img/Logo/Asset-3.webp" alt="ZeroBuzz Brew logo">
+      </a>
+
+      <nav class="main-nav">
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a class="main-nav-link" href="produkter.html">PRODUKTER</a></li>
+          <li><a class="main-nav-link" href="omos.html">OM OS</a></li>
+          <li><a class="main-nav-link" href="kontakt.html">KONTAKT</a></li>
+        </ul>
+        
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link hideOnMobile" href="produkter.html">PRODUKTER</a></li>
+          <li><a class="main-nav-link hideOnMobile" href="omos.html">OM OS</a></li>
+          <li><a class="main-nav-link hideOnMobile" href="kontakt.html">KONTAKT</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+<!-- main -->
+    <main>
+      <section class="section-hero">
+        <section class="hero">
+          <section class="hero-text-box">
+             <h1 class="heading-primary">ET SUNDERE ALTERNATIV</h1>
+               <p class="hero-description">
+                 Er du på jagt efter den bedste alkoholfri øl, så kan du finde den
+                 sundeste, og bedst smagene alternativ hos os.
+               </p>
+
+              <a href="omos.html" class="btn btn--outline">OM OS</a>
+          </section>
+
+          <section class="hero-img-box">
+             <img
+              src="img/hero/premium_photo-1661434686191-d4695d9396f0.webp"
+              class="hero-img"
+              alt="Man enjoying food and his alkoholfree beer">
+          </section>
+        </section>
+      </section>
+
+
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo">
+            <img class="logo" src="img/Logo/Asset-3.webp" alt="ZeroBuzz Brew logo">
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2024 by ZeroBuzz, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Kontakt os</p>
+          <address class="contacts">
+            <p class="address">Sønderhøj 30, 8260 Viby J</p>
+            <p>
+              <a class="footer-link" href="tel:72-28-60-00">7228 6000</a
+              ><br>
+              <a class="footer-link" href="mailto:hello@ZeroBuzz.com"
+                >hello@ZeroBuzz.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Konto</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Om os</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About ZeroBuzz</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Ressourcer</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+<!-- script for burger menu bar -->
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+
+
+</body>
+</html>

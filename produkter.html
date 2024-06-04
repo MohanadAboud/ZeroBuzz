@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZeroBuzz Brew produkter alcohol-free">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+
+    <title>ZeroBuzz Brew produkter</title>
+  </head>
+<body>
+    <header class="header nav-open">
+      <a href="index.html">
+        <img class="logo" src="img/Logo/Asset-3.webp" alt="ZeroBuzz Brew logo">
+      </a>
+
+      <nav class="main-nav">
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a class="main-nav-link-hide" href="produkter.html">PRODUKTER</a></li>
+          <li><a class="main-nav-link-hide" href="omos.html">OM OS</a></li>
+          <li><a class="main-nav-link-hide" href="kontakt.html">KONTAKT</a></li>
+        </ul>
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link hideOnMobile" href="produkter.html">PRODUKTER</a></li>
+          <li><a class="main-nav-link hideOnMobile" href="omos.html">OM OS</a></li>
+          <li><a class="main-nav-link hideOnMobile" href="kontakt.html">KONTAKT</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <section class="section-how">
+        <div class="container"></div>
+          <h1 class="heading-secondary-2"> PRODUKTER</h1>
+      </section>
+
+      <section class="cards">
+        <article class="card button open-button" >
+          <!-- <button class="button open-button"></button> -->
+          <img src="img/produkter/markus-spiske-qhgtBITGZeI-unsplash.webp" alt=" blue wheat-beer can that is Alcohol-Free" class="p-img" >
+            <a href="#" class="card_link" ></a>
+            <div class="card__info">
+              <span class="card__category">wheat Beer</span>
+              <h3 class="card__title">Alcohol-Free</h3>
+              <span class="card__by">by <a href="#" class="card__author" title="author">ZeroBuzz</a>        
+              </span>
+
+                    <!-- fra denne vid - https://www.youtube.com/watch?v=TAB_v6yBXIE -->
+          </div>
+        </article>
+        <dialog class="modal" id="modal">
+          <h1 class="pop-main">Wheat beer</h1>
+          <div class="pop-p">
+            <p id="p-wheat">Vores Wheat Beer Alcohol-Free er en udsøgt alkoholfri øl, der bevarer alle de klassiske kvaliteter, som kendetegner en traditionel hvedeøl. Perfekt til dem, der ønsker at nyde en lækker og forfriskende øl uden alkoholens påvirkning. </p>
+            <h1 class="pop-main">Ernæring</h1>
+            <div id="p-Ernæring">
+              <p>Kalorier: 25 kcal</p>
+              <p>Kulhydrater: 5 g</p>
+              <p>Heraf sukkerarter: 0.5 g</p>
+              <p>Fedt: 0 g</p>
+              <p>Protein: 0.5 g</p>
+              <p>Salt: 0 g</p>
+            </div>
+
+          </div>
+
+          <button class="button close-button">close</button>           
+          <img src="img/Logo/Asset-3.webp" alt="zerobuzz-logo" id="poplogo">
+
+          <form class="form" method="dialog">
+          </form>
+        
+        </dialog>
+          
+          
+        <article class="card ">
+          <img src="img/produkter/markus-spiske-qhgtBITGZeI-yellow-unsplash.webp" alt="yellow wheat-beer can with 0.5 Alcohol" class="p-img">
+          <a href="#" class="card_link"></a>
+          <div class="card__info">
+            <span class="card__category">wheat Beer</span>
+            <h3 class="card__title">0.5 procent</h3>
+            <span class="card__by">by <a href="#" class="card__author" title="author">ZeroBuzz</a></span>
+          </div>
+        </article>  
+        
+
+
+        <article class="card">
+          <img src="img/produkter/Asset-4.webp" alt="Alcohol-Free beer bottle" class="p-img">
+          <a href="#" class="card_link"></a>
+          <div class="card__info-3">
+            <span class="card__category">Beer</span>
+            <h3 class="card__title">0.5 procent</h3>
+            <span class="card__by">by <a href="#" class="card__author" title="author">ZeroBuzz</a></span>
+          </div>
+        </article>  
+
+
+
+      </section>
+
+
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo">
+            <img class="logo" src="img/Logo/Asset-3.webp" alt="ZeroBuzz Brew logo">
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2024 by ZeroBuzz, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Kontakt os</p>
+          <address class="contacts">
+            <p class="address">Sønderhøj 30, 8260 Viby J</p>
+            <p>
+              <a class="footer-link" href="tel:72-28-60-00">7228 6000</a
+              ><br>
+              <a class="footer-link" href="mailto:hello@ZeroBuzz.com"
+                >hello@ZeroBuzz.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Konto</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Om os</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About ZeroBuzz</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Ressourcer</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- script for burger menu bar -->
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+
+    <script>
+    const modal = document.querySelector("#modal");
+      const openModal = document.querySelector(".open-button");
+      const closeModal = document.querySelector(".close-button");
+      
+      openModal.addEventListener("click", () => {
+        modal.showModal();  
+      });
+      
+      closeModal.addEventListener("click", () => {
+        modal.close();
+      });</script>
+
+  </body>
+</html>

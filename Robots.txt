@@ -1,0 +1,2 @@
+User-agent: * Allow: / 
+Sitemap: https://zerobuzz.aboudme.dk/sitemap.xml
